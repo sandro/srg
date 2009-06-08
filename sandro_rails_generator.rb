@@ -35,6 +35,10 @@ test:
   database: #{app_name_underscore}_test
 END
 
+append_file 'Rakefile', <<-END
+Rake::Task[:default].clear
+task :default => :spec
+END
 
 
 #====================
