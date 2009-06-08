@@ -6,7 +6,16 @@ def app_name_underscore
   @app_name_underscore ||= app_name.gsub(' ', '_').underscore
 end
 
-FileUtils.rm_rf %w(README public/index.html public/images/rails.png test)
+#====================
+# PREPARE
+#====================
+FileUtils.rm_rf %w(public/index.html public/images/rails.png test)
+run 'touch public/stylesheets/application.css db/schema.rb'
+
+file 'README', <<-END
+#{app_name}
+===============================
+END
 
 file 'config/routes.rb', <<-END
 ActionController::Routing::Routes.draw do |map|
@@ -26,7 +35,7 @@ test:
   database: #{app_name_underscore}_test
 END
 
-file 'db/schema.rb'
+
 
 #====================
 # GEMS
