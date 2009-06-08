@@ -52,15 +52,16 @@ gem 'rspec-rails', :lib => false, :git => 'git://github.com/dchelimsky/rspec-rai
 gem 'sandro-homeward', :lib => 'homeward', :source => 'http://gems.github.com'
 
 #====================
-# APP
+# SETUP
 #====================
 
 rake "gems:install", :sudo => true
 rake "db:create:all"
 
-generate("rspec")
+generate "rspec"
 
 run 'haml --rails .'
+
 rake "log:clear"
 
 #====================
