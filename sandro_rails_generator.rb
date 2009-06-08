@@ -44,11 +44,12 @@ END
 #====================
 # GEMS
 #====================
-gem 'giraffesoft-resource_controller', :version => '>= 0.5.5', :lib => 'resource_controller', :source => "http://gems.github.com"
-gem 'mislav-will_paginate', :version => '>= 2.3.7', :lib => 'will_paginate', :source => 'http://gems.github.com'
-gem "haml", :version => ">= 2.0.7"
-gem 'rspec', :version => ">= 1.1.12", :lib => false, :git => 'git://github.com/dchelimsky/rspec.git'
-gem 'rspec-rails', :version => ">= 1.1.12", :lib => false, :git => 'git://github.com/dchelimsky/rspec-rails.git'
+gem 'giraffesoft-resource_controller', :lib => 'resource_controller', :source => "http://gems.github.com"
+gem "haml"
+gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com'
+gem 'rspec', :lib => false, :git => 'git://github.com/dchelimsky/rspec.git'
+gem 'rspec-rails', :lib => false, :git => 'git://github.com/dchelimsky/rspec-rails.git'
+gem 'sandro-homeward', :lib => 'homeward', :source => 'http://gems.github.com'
 
 #====================
 # APP
