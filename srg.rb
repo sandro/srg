@@ -64,8 +64,6 @@ generate "rspec"
 generate "homeward"
 rake "homeward:install"
 
-run 'haml --rails .'
-
 rake "log:clear"
 
 #====================
