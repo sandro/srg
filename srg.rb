@@ -60,6 +60,11 @@ rake "gems:install", :sudo => true
 rake "db:create:all"
 
 generate "rspec"
+file 'spec/spec.opts', <<-END
+--colour
+--format specdoc
+--loadby mtime
+END
 
 generate "homeward"
 rake "homeward:install"
