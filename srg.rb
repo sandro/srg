@@ -50,6 +50,7 @@ gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.git
 gem 'rspec', :lib => false, :git => 'git://github.com/dchelimsky/rspec.git'
 gem 'rspec-rails', :lib => false, :git => 'git://github.com/dchelimsky/rspec-rails.git'
 gem 'sandro-homeward', :lib => 'homeward', :source => 'http://gems.github.com'
+gem 'thoughtbot-factory_girl', :lib => 'factory_girl', :source => 'http://gems.github.com'
 
 #====================
 # SETUP
