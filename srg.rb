@@ -23,16 +23,17 @@ end
 END
 
 file 'config/database.yml', <<-END
-development: 
+development:
   adapter: mysql
   username: root
-  password: 
+  password:
   database: #{app_name_underscore}_development
-test: 
-  adapter: mysql
-  username: root
-  password: 
-  database: #{app_name_underscore}_test
+
+test:
+  adapter: sqlite3
+  database: db/#{app_name_underscore}_test.sqlite3
+  pool: 5
+  timeout: 5000
 END
 
 append_file 'Rakefile', <<-END
