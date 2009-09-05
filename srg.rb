@@ -48,7 +48,6 @@ END
 gem 'giraffesoft-resource_controller', :lib => 'resource_controller', :source => "http://gems.github.com"
 gem "haml"
 gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com'
-gem 'sandro-homeward', :lib => 'homeward', :source => 'http://gems.github.com'
 gem 'thoughtbot-factory_girl', :lib => 'factory_girl', :source => 'http://gems.github.com'
 
 gem 'rspec', :env => 'test', :lib => false, :source => 'http://gems.github.com'
